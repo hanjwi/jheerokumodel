@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
-master = pd.read_csv('../Data/healthcare-dataset-stroke-data.csv')
+master = pd.read_csv('../data/healthcare-dataset-stroke-data.csv')
 master['bmi'] = master['bmi'].fillna(master.bmi.mean())
 category_data = master[['work_type','Residence_type','smoking_status']].values
 gender = master[['gender']].values
